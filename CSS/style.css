@@ -1,0 +1,96 @@
+
+
+
+p {
+    font-size: small;  
+}
+
+.parrafo{
+    text-align: center;
+    margin-bottom: 0rem;
+    
+}
+
+h3 {
+    margin: 0px,0px,8px;
+
+}
+footer {
+    border: 10px,20px,10px;
+    box-sizing: border-box;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(29,60,78) 0%, rgb(29,60,78) 35%, rgb(54, 109, 141) 100%);
+    font-size: 10px;
+    font-style:inherit;
+    color: white;
+    min-height: 10vh;
+    display: inline-flexbox;
+}
+
+form{
+    margin-bottom: 2rem;
+}
+
+.orador{
+    padding: auto;
+    text-align: center;
+}
+
+div {
+    display: block;
+}
+
+
+#ba1 {
+    background: rgba(0, 0, 0, 0.7);
+    opacity:0.5;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    object-fit: cover;
+}
+
+#conf{
+    text-align: justify;
+    margin-top: 3rem;
+    overflow: auto;
+    margin-right: 2rem;
+}
+
+
+#texto-bsas{
+    text-align: justify;
+    text-align: right; 
+}
+
+#honolulu{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
+
+
+#fecha-lugar{
+    background-color: rgb(61, 61, 61);
+
+}
+
+#texto-fecha-lugar{
+    text-align: justify;
+    text-align: left;
+}
+
+
+
+#subrayado {
+    border-bottom:2px dotted black;
+}
+
+#boton-formulario{
+    margin-top: 1rem;
+}
+
+#pie-pagina a{
+    font-size: small;
+}
