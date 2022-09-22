@@ -70,7 +70,9 @@ div {
 
 #texto-bsas{
     text-align: justify;
-    text-align: right; 
+    text-align: right;
+    /*font-size: medium;
+    margin-left: 780px; /*preguntar si va asi o con br*/
 }
 
 #honolulu{
