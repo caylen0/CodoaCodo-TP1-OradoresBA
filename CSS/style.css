@@ -71,8 +71,9 @@ div {
 #texto-bsas{
     text-align: justify;
     text-align: right;
-    /*font-size: medium;
-    margin-left: 780px; /*preguntar si va asi o con br*/
+    font-size: medium;
+    /*margin-left: 780px; /*preguntar si va asi o con br*/
+    padding-left: 58%;
 }
 
 #honolulu{
