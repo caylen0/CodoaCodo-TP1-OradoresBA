@@ -2910,7 +2910,7 @@ textarea.form-control-lg {
 
 .btn-success {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #198754;
+  --bs-btn-bg: #29a744;
   --bs-btn-border-color: #198754;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #157347;
@@ -8134,7 +8134,7 @@ textarea.form-control-lg {
 
 .text-success {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-success-rgb), var(--bs-text-opacity)) !important;
+  color: #28a043 !important;
 }
 
 .text-info {
