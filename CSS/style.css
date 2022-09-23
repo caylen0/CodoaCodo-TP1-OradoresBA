@@ -63,7 +63,7 @@ div {
 #conf{
     text-align: justify;
     margin-top: 3rem;
-    overflow: auto;
+    overflow: auto; /*scroll de pantalla para que el texto no desborde*/
     margin-right: 2rem;
 }
 
