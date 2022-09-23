@@ -26,7 +26,7 @@ footer {
     font-style:inherit;
     color: white;
     min-height: 10vh;
-    display: inline-flexbox;
+    font-size: medium;
 }
 
 form{
@@ -67,7 +67,6 @@ div {
     margin-right: 2rem;
 }
 
-
 #texto-bsas{
     text-align: justify;
     text-align: right;
@@ -82,7 +81,6 @@ div {
     height:100%;
 }
 
-
 #fecha-lugar{
     background-color: rgb(61, 61, 61);
 
@@ -92,8 +90,6 @@ div {
     text-align: justify;
     text-align: left;
 }
-
-
 
 #subrayado {
     border-bottom:1px dotted black;
