@@ -104,5 +104,6 @@ div {
 }
 
 #pie-pagina a{
-    font-size: small;
+    font-size: medium;
+    margin-top: 40px;
 }
