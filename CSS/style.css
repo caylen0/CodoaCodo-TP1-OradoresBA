@@ -52,20 +52,21 @@ div {
     background-size: cover;
     background-blend-mode: darken;
     object-fit: cover;
+    height: 40vw;
 }
 
 #conf{
     text-align: justify;
-    margin-top: 3rem;
+    margin-top: 6rem;
+    margin-right: 4rem;
+    margin-bottom: 2rem;
     overflow: auto; /*scroll de pantalla para que el texto no desborde*/
-    margin-right: 2rem;
 }
 
 #texto-bsas{
     text-align: justify;
     text-align: right;
     font-size: medium;
-    /*margin-left: 780px; /*preguntar si va asi o con br*/
     padding-left: 58%;
 }
 
