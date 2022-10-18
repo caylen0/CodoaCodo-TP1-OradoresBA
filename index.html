@@ -67,7 +67,7 @@
                             para tí. Te esperamos!
                         </p>
                         <a role="button" class="btn btn-outline-light" href="#se-orador">Quiero ser orador</a>
-                        <a role="button" class="btn btn-success" href="#">Comprar tickets</a>
+                        <a role="button" class="btn btn-success" href="#tickets">Comprar tickets</a>
                     </div>
                 </div>
             </div>
@@ -194,6 +194,90 @@
         </div>
     </section>
 
+    <section>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 text-center">
+                <div class="col">
+                    <div class="card border-primary mb-2" style="max-width: 12rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Estuadiante</h5>
+                            <p class="card-text">Tiene un descuento</p>
+                            <p class="card-text">80%</p>
+                            <p class="card-text text-muted">*presentar documentación</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card border-info mb-2" style="max-width: 12rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Trainee</h5>
+                            <p class="card-text">Tiene un descuento</p>
+                            <p class="card-text">50%</p>
+                            <p class="card-text text-muted">*presentar documentación</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-warning mb-2" style="max-width: 12rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Junior</h5>
+                            <p class="card-text">Tiene un descuento</p>
+                            <p class="card-text">15%</p>
+                            <p class="card-text text-muted">*presentar documentación</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tickets">
+        <p class="parrafo"> VENTA</p>
+        <h3 class="orador">VALOR DE TICKET $200</h3>
+        <div class="container">
+            <form action="mailto:perez9camila@gmail.com" method="post" enctype="text/plain">
+                <div class="row justify-content-center mt-3">
+                    <div class="col-4">
+                        <input type="text" name="Nombre" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                    </div>
+                    <div class="col-4">
+                        <input type="text" name="Apellido" class="form-control" placeholder="Apellido"
+                            aria-label="Apellido">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center mt-3">
+                    <div class="col-8">
+                        <input type="Correo" class="form-control" placeholder="Correo" aria-label="Correo">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center mt-3">
+                    <div class="col-4">
+                        Cantidad
+                        <input type="number" class="form-control" placeholder="Cantidad" aria-label="Cantidad"
+                            id="cantidadTickets" min="1" required>
+                    </div>
+                    <div class="col-4">
+                        Categoria
+                        <select class="form-select" aria-label="Categoría" id="categoria">
+                            <option value="estudiante" selected>Estudiante</option>
+                            <option value="trainee">Trainee</option>
+                            <option value="junior">Junior</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div id="boton-formulario" class=" col-2 mx-auto">
+                        <button class="btn btn-primary" type="reset">Borrar</button>
+                        <button class="btn btn-primary" type="submit">Resumen</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
 
 
 
