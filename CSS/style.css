@@ -3,6 +3,15 @@
     background-color: #353a40;
 }
 
+h5{
+    font-size: x-large;
+}
+
+h6{
+    font-size: medium;
+    font-weight: bold;
+}
+
 p {
     font-size: small;  
 }
@@ -88,6 +97,10 @@ div {
 
 #subrayado {
     border-bottom:1px dotted black;
+}
+
+#parrafo-descuento{
+    font-size: medium;
 }
 
 #boton-formulario{
