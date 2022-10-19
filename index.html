@@ -257,12 +257,12 @@
                 <div class="row justify-content-center mt-3">
                     <div class="col-4">
                         Cantidad
-                        <input type="number" class="form-control" placeholder="Cantidad" aria-label="Cantidad"
+                        <input type="number" class="form-control" id="cantidad_tickets" placeholder="Cantidad" aria-label="Cantidad"
                             id="cantidadTickets" min="1" required>
                     </div>
                     <div class="col-4">
                         Categoria
-                        <select class="form-select" aria-label="Categoría" id="categoria">
+                        <select class="form-select" id="tipo_descuento" aria-label="Categoría" id="categoria">
                             <option value="estudiante" selected>Estudiante</option>
                             <option value="trainee">Trainee</option>
                             <option value="junior">Junior</option>
@@ -272,7 +272,7 @@
                 <div class="row justify-content-center mt-3">
                     <div class="col-8">
                         <div class="alert alert-primary" role="alert">
-                            Total a pagar: $ <p id="totalPago" class="align-middle"></p>
+                            Total a pagar: $ <p id="total_a_pagar" class="align-middle"></p>
                         </div>
                     </div>
 
