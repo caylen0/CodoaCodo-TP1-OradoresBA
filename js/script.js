@@ -1,7 +1,7 @@
 //Defino el valor de los tickets
 
 const precio_ticket = 200;
-
+const boton = document.querySelector("#btn_resumen");
 //Porcentaje de descuento
 
 let descuento_estudiante = 0.80;
@@ -10,9 +10,9 @@ let descuento_junior = 0.15;
 
 //Creo variables necesarias
 
-let cant_tickets = document.getElementById("cantidad_tickets")
-let descuento = document.getElementById("tipo_descuento")
-let total_a_pagar = document.getElementById("total_a_pagar")
+let cant_tickets = document.querySelector("#cantidad_tickets")
+let descuento = document.querySelector("#categoria_descuento")
+let total_a_pagar = document.querySelector("#total_a_pagar")
 
 //Creo funcion para calcular el total a pagar
 
@@ -28,15 +28,20 @@ function total() {
     let total_con_descuento = 0;
 
     //Aplico descuento segun categoria
-    if (tipo_descuento.value == "estudiante") {
+    if (categoria_descuento.value == "estudiante") {
         total_con_descuento = total_pago(total_con_descuento,total_sin_descuento,descuento_estudiante)
     }
     
-    if (tipo_descuento.value == "trainee") {
+    if (categoria_descuento.value == "trainee") {
         total_con_descuento = total_pago(total_con_descuento,total_sin_descuento,descuento_trainee)
     }
 
-    if (tipo_descuento.value == "junior") {
+    if (categoria_descuento.value == "junior") {
         total_con_descuento = total_pago(total_con_descuento,total_sin_descuento,descuento_junior)
     }
+    return total_con_descuento
+}
+
+boton.onclick = () => {
+    total_a_pagar.value = total_con_descuento
 }

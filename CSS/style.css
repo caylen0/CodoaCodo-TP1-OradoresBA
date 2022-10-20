@@ -116,3 +116,8 @@ div {
     margin-top: 25px;
     margin-bottom: 25px;
 }
+
+#tarjetas_descuento {
+    border-radius: 0px;
+    margin-top: 30px;
+}
