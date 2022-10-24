@@ -10,7 +10,8 @@ let descuento_junior = 0.15;
 
 //Creo variables necesarias
 
-let cant_tickets = document.querySelector("#cantidad_tickets")
+let cant_tickets = Number.parseInt(document.getElementById("cantidad_tickets").value);
+console.log(cant_tickets)
 let descuento = document.querySelector("#categoria_descuento")
 let total_a_pagar = document.querySelector("#total_a_pagar")
 
