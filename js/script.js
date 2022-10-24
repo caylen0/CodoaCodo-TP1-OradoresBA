@@ -10,10 +10,7 @@ let descuento_junior = 0.15;
 
 //Creo variables necesarias
 
-let cant_tickets = Number.parseInt(document.getElementById("cantidad_tickets").value);
-console.log(cant_tickets)
-let descuento = document.querySelector("#categoria_descuento")
-let total_a_pagar = document.querySelector("#total_a_pagar")
+
 
 //Creo funcion para calcular el total a pagar
 
@@ -24,10 +21,15 @@ function total_pago(total_con_descuento,total_sin_descuento,descuento) {
 
 function total() {
 
+    let cant_tickets = document.getElementById('cantidad_tickets');
+    console.log(cant_tickets.value)
+    let descuento = document.getElementById('categoria_descuento')
+
+    let total_a_pagar = document.getElementById('total_a_pagar')
+
     let total_sin_descuento = (cantidad_tickets.value) * precio_ticket;
 
     let total_con_descuento = 0;
-
     //Aplico descuento segun categoria
     if (categoria_descuento.value == "estudiante") {
         total_con_descuento = total_pago(total_con_descuento,total_sin_descuento,descuento_estudiante)
@@ -41,8 +43,4 @@ function total() {
         total_con_descuento = total_pago(total_con_descuento,total_sin_descuento,descuento_junior)
     }
     return total_con_descuento
-}
-
-boton.onclick = () => {
-    total_a_pagar.value = total_con_descuento
 }
