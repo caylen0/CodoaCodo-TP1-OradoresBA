@@ -8,8 +8,9 @@ let descuento_estudiante = 0.80;
 let descuento_trainee = 0.50;
 let descuento_junior = 0.15;
 
-//Creo variables necesarias
-
+//Creo variables para los botones
+let boton_resumen = document.querySelector("#btn-resumen")
+let boton_borrar = document.querySelector("#btn-borrar")
 
 
 //Creo funcion para calcular el total a pagar
@@ -19,7 +20,7 @@ function total_pago(total_con_descuento,total_sin_descuento,descuento) {
     return total_con_descuento
 }
 
-let boton_resumen = document.querySelector("#btn-resumen")
+
 
 
 function total() {
@@ -53,8 +54,9 @@ function total() {
     
 }
 
-function reset() {
+function borrar() {
     let total = document.querySelector("#total_a_pagar")
     total.innerHTML = "Total a pagar: $"
 }
 boton_resumen.addEventListener("click", total())
+boton_borrar.addEventListener("click" , borrar())
