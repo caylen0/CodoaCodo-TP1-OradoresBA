@@ -1,7 +1,6 @@
 //Defino el valor de los tickets
 
 const precio_ticket = 200;
-const boton = document.querySelector("#btn_resumen");
 //Porcentaje de descuento
 
 let descuento_estudiante = 0.80;
@@ -20,11 +19,8 @@ function total_pago(total_con_descuento,total_sin_descuento,descuento) {
     return total_con_descuento
 }
 
-
-
-
 function total() {
-
+    //Creo variables con los campos del html
     let cant_tickets = document.querySelector("#cantidad").value;
 
     let descuento = document.querySelector("#categoria_descuento").value
@@ -35,25 +31,27 @@ function total() {
 
     let total_con_descuento = 0;
     //Aplico descuento segun categoria
+    let estudiante = "estudiante"
+    let trainee = "trainee"
+    let junior = "junior"
 
-    if (descuento == "estudiante") {
-        total_con_descuento = total_pago(total_con_descuento,total_sin_descuento,descuento_estudiante)
-        total_a_pagar.innerHTML = "Total a pagar: $" + total_con_descuento
+    switch (descuento == estudiante) {
+        case descuento == estudiante:
+            total_con_descuento = total_pago(total_con_descuento,total_sin_descuento,descuento_estudiante)
+            total_a_pagar.innerHTML = "Total a pagar: $" + total_con_descuento
+            break
+        case descuento == trainee:
+            total_con_descuento = total_pago(total_con_descuento,total_sin_descuento,descuento_trainee)
+            total_a_pagar.innerHTML = "Total a pagar: $" + total_con_descuento
+            break
+        case descuento == junior:
+            total_con_descuento = total_pago(total_con_descuento,total_sin_descuento,descuento_junior)
+            total_a_pagar.innerHTML = "Total a pagar: $" +total_con_descuento
+            break
     }
-    
-    else if (descuento == "trainee") {
-        total_con_descuento = total_pago(total_con_descuento,total_sin_descuento,descuento_trainee)
-        total_a_pagar.innerHTML = "Total a pagar: $" + total_con_descuento
-    }
-
-    else {
-        total_con_descuento = total_pago(total_con_descuento,total_sin_descuento,descuento_junior)
-        total_a_pagar.innerHTML = "Total a pagar: $" +total_con_descuento
-    }
-
-    
 }
 
+//Hago un reset del campo total a pagar
 function borrar() {
     let total = document.querySelector("#total_a_pagar")
     total.innerHTML = "Total a pagar: $"
