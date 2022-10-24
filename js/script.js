@@ -19,28 +19,42 @@ function total_pago(total_con_descuento,total_sin_descuento,descuento) {
     return total_con_descuento
 }
 
+let boton_resumen = document.querySelector("#btn-resumen")
+
+
 function total() {
 
-    let cant_tickets = document.getElementById('cantidad_tickets');
-    console.log(cant_tickets.value)
-    let descuento = document.getElementById('categoria_descuento')
+    let cant_tickets = document.querySelector("#cantidad").value;
 
-    let total_a_pagar = document.getElementById('total_a_pagar')
+    let descuento = document.querySelector("#categoria_descuento").value
 
-    let total_sin_descuento = (cantidad_tickets.value) * precio_ticket;
+    let total_a_pagar = document.querySelector("#total_a_pagar")
+
+    let total_sin_descuento = (cant_tickets) * precio_ticket;
 
     let total_con_descuento = 0;
     //Aplico descuento segun categoria
-    if (categoria_descuento.value == "estudiante") {
+
+    if (descuento == "estudiante") {
         total_con_descuento = total_pago(total_con_descuento,total_sin_descuento,descuento_estudiante)
+        total_a_pagar.innerHTML = "Total a pagar: $" + total_con_descuento
     }
     
-    if (categoria_descuento.value == "trainee") {
+    else if (descuento == "trainee") {
         total_con_descuento = total_pago(total_con_descuento,total_sin_descuento,descuento_trainee)
+        total_a_pagar.innerHTML = "Total a pagar: $" + total_con_descuento
     }
 
-    if (categoria_descuento.value == "junior") {
+    else {
         total_con_descuento = total_pago(total_con_descuento,total_sin_descuento,descuento_junior)
+        total_a_pagar.innerHTML = "Total a pagar: $" +total_con_descuento
     }
-    return total_con_descuento
+
+    
 }
+
+function reset() {
+    let total = document.querySelector("#total_a_pagar")
+    total.innerHTML = "Total a pagar: $"
+}
+boton_resumen.addEventListener("click", total())

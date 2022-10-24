@@ -4,7 +4,7 @@
 }
 
 h5{
-    font-size: x-large;
+    font-size: larger;
 }
 
 h6{
@@ -107,9 +107,6 @@ div {
     margin-top: 1rem;
 }
 
-#boton-tickets{
-    
-}
 
 #pie-pagina a{
     font-size: medium;
@@ -120,4 +117,12 @@ div {
 #tarjetas_descuento {
     border-radius: 0px;
     margin-top: 30px;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+
+#botones {
+    border-radius: 0px;
+
 }

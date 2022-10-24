@@ -272,19 +272,19 @@
             </div>
             <div class="row justify-content-center mt-3">
                 <div class="col-8">
-                    <div class="alert alert-primary" role="alert">
-                        Total a pagar: $ <p id="total_a_pagar" class="align-middle"></p>
+                    <div id="total_a_pagar" class="alert alert-primary" role="alert">
+                         Total a pagar: $
                     </div>
                 </div>
 
             </div>
-            <div class="container">
+            <div class="container" id="botones">
                 <div class="row justify-content-center mb-2">
                     <div id="borrar" class="d-grid col-4">
-                        <button class="btn btn-primary" id="btn-borrar" type="reset">Borrar</button>
+                        <button class="btn btn-primary" id="btn-borrar" onclick="reset()" type="reset">Borrar</button>
                     </div>
                     <div id="resumen" class="d-grid col-4">
-                        <button class="btn btn-primary" id="btn-resumen" type="button">Resumen</button>
+                        <button class="btn btn-primary" id="btn-resumen" onclick="total()" type="button">Resumen</button>
                     </div>
                 </div>
             </div>
