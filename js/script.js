@@ -31,23 +31,20 @@ function total() {
 
     let total_con_descuento = 0;
     //Aplico descuento segun categoria
-    let estudiante = "estudiante"
-    let trainee = "trainee"
-    let junior = "junior"
+    let estudiante = "1"
+    let trainee = "2"
 
-    switch (descuento == estudiante) {
-        case descuento == estudiante:
-            total_con_descuento = total_pago(total_con_descuento,total_sin_descuento,descuento_estudiante)
-            total_a_pagar.innerHTML = "Total a pagar: $" + total_con_descuento
-            break
-        case descuento == trainee:
-            total_con_descuento = total_pago(total_con_descuento,total_sin_descuento,descuento_trainee)
-            total_a_pagar.innerHTML = "Total a pagar: $" + total_con_descuento
-            break
-        case descuento == junior:
-            total_con_descuento = total_pago(total_con_descuento,total_sin_descuento,descuento_junior)
-            total_a_pagar.innerHTML = "Total a pagar: $" +total_con_descuento
-            break
+    if (descuento == estudiante){
+        total_con_descuento = total_pago(total_con_descuento,total_sin_descuento,descuento_estudiante)
+        total_a_pagar.innerHTML = "Total a pagar: $" + total_con_descuento
+    }
+    else if (descuento == trainee) {
+        total_con_descuento = total_pago(total_con_descuento,total_sin_descuento,descuento_trainee)
+        total_a_pagar.innerHTML = "Total a pagar: $" + total_con_descuento
+    }
+    else {
+        total_con_descuento = total_pago(total_con_descuento,total_sin_descuento,descuento_junior)
+        total_a_pagar.innerHTML = "Total a pagar: $" +total_con_descuento
     }
 }
 
