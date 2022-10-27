@@ -116,7 +116,7 @@ div {
 
 #tarjetas_descuento {
     border-radius: 0px;
-    margin-top: 30px;
+    margin-top: 3vw;
     width: auto;
     height: auto;
     object-fit: cover;
@@ -125,4 +125,37 @@ div {
 #botones {
     border-radius: 0px;
 
+}
+
+/*Responsive para celulares pequeños*/
+@media (max-width: 575px ) {
+    #tarjetas {
+        border-radius: 0px;
+        margin-top: 3vw;
+        width: auto;
+        height: auto;
+        object-fit: cover;
+    }
+
+    #conf{
+        text-align: justify;
+        text-align: center;
+        margin-top: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+        overflow: auto; /*scroll de pantalla para que el texto no desborde*/
+    }
+
+    #texto-bsas{
+        text-align: justify;
+        text-align: right;
+        font-size: small;
+        
+    }
+
+    #pie-pagina a{
+        font-size: small;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
 }
