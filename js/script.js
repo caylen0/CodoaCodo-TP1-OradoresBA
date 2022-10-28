@@ -31,21 +31,20 @@ function total() {
 
     let total_con_descuento = 0;
     //Aplico descuento segun categoria
-    let estudiante = "1"
-    let trainee = "2"
 
-    if (descuento == estudiante){
-        total_con_descuento = total_pago(total_con_descuento,total_sin_descuento,descuento_estudiante)
-        total_a_pagar.innerHTML = "Total a pagar: $" + total_con_descuento
+    switch (descuento) {
+        case "1":
+            total_con_descuento = total_pago(total_con_descuento,total_sin_descuento,descuento_estudiante)               
+            break;
+        case "2":
+            total_con_descuento = total_pago(total_con_descuento,total_sin_descuento,descuento_trainee)               
+            break;
+        case "3":
+            total_con_descuento = total_pago(total_con_descuento,total_sin_descuento,descuento_junior)
+            break;
     }
-    else if (descuento == trainee) {
-        total_con_descuento = total_pago(total_con_descuento,total_sin_descuento,descuento_trainee)
-        total_a_pagar.innerHTML = "Total a pagar: $" + total_con_descuento
-    }
-    else {
-        total_con_descuento = total_pago(total_con_descuento,total_sin_descuento,descuento_junior)
-        total_a_pagar.innerHTML = "Total a pagar: $" +total_con_descuento
-    }
+    total_a_pagar.innerHTML = "Total a pagar: $" + total_con_descuento
+
 }
 
 //Hago un reset del campo total a pagar
